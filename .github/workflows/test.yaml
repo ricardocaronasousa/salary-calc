@@ -1,0 +1,13 @@
+name: Testing Runs-On
+
+on:
+  push:
+    branches: main
+
+jobs:
+  test:
+    runs-on:
+      - runs-on=${{ github.run_id }}
+      - runner=2cpu-linux-x64
+    steps:
+      - run: echo "this works!"
