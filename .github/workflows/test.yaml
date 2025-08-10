@@ -8,3 +8,5 @@ on:
 jobs:
   test:
     runs-on: self-hosted
+    steps:
+      - run: echo "I'm here"
